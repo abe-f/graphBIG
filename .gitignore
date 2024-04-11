@@ -65,6 +65,5 @@ csr_bench/csr_kCore/csr_kcore
 csr_bench/tool_genCSR/genCSR
 
 # ignore untar libpfm sources
-tools/libpfm-4.5.0
 tools/libpfm-4.6.0
 

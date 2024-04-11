@@ -14,6 +14,8 @@ lib/libpfm.a: ${PFMDIR}
 ${PFMDIR}:
 	rm -rf ${PFMDIR}
 	tar xzvf ${PFMDIR}.tar.gz
+	cp tools/syst_count.c tools/libpfm-4.5.0/perf_examples/syst_count.c
+	cp tools/config.mk tools/libpfm-4.5.0/config.mk
 
 lib/libpfm_cxx.a: 
 	make -C pfm_cxx all 
