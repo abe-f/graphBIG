@@ -67,3 +67,5 @@ csr_bench/tool_genCSR/genCSR
 # ignore untar libpfm sources
 tools/libpfm-4.6.0
 
+dataset/large/*
+!dataset/large/gen_data.py
