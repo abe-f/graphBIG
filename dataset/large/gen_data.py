@@ -1,5 +1,14 @@
 import os
 
+if 1:
+    #os.system(f"wget https://drive.google.com/file/d/1_uvttPWADzgGUMTkgmnnreUPDfKWoLCj")
+
+    # this downloads twitter dataset (1.8M edges) from gdrive
+    os.system("wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1_uvttPWADzgGUMTkgmnnreUPDfKWoLCj' -O edge.csv")
+    os.system("wget --no-check-certificate 'https://docs.google.com/uc?export=download&id=1tzbqUe4llYmgjvtQdplv6LPKVfe1ClYS' -O vertex.csv")
+
+    exit(0)
+    
 # grab some data from facebook https://snap.stanford.edu/data/ego-Facebook.html
 dataset_name = "twitter_combined"
 os.system(f"wget https://snap.stanford.edu/data/{dataset_name}.txt.gz")
